@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    micro:
+        build: ./docker/micro
+
+    go-micro:
+        build: ./docker/go-micro
+
+    govendor:
+        build: ./docker/govendor
