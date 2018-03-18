@@ -1,7 +1,6 @@
 # grpc plugin
 
 ```shell
-go get -u -v github.com/micro/go-plugins
 go get -u -v github.com/micro/micro
 
 cp grpc_plugin.go $GOPATH/src/github.com/micro/micro
