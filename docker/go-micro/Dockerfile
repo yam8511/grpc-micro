@@ -14,5 +14,8 @@ RUN go get -u -v github.com/micro/micro
 RUN go get -u -v github.com/jinzhu/gorm
 RUN go get -u -v github.com/garyburd/redigo/redis
 
+# instal event sourcing packages
+RUN go get -u -v github.com/nsqio/go-nsq
+
 # install config packages
 RUN go get -u -v github.com/naoina/toml
