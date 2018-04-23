@@ -1,4 +1,4 @@
-# grpc plugin
+# grpc plugin [DEPRECATED]
 
 ```shell
 go get -u -v github.com/micro/micro
