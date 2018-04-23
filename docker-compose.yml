@@ -3,15 +3,9 @@ version: '3'
 services:
     micro:
         build: ./docker/micro_grpc
-        command: go run /keep.go
-        volumes:
-            - ./keep.go:/keep.go
 
     go-micro:
         build: ./docker/go-micro
-        command: go run /keep.go
-        volumes:
-            - ./keep.go:/keep.go
 
     govendor:
         build: ./docker/govendor
