@@ -11,6 +11,7 @@ RUN go get -u -v github.com/micro/go-micro
 RUN go get -u -v github.com/micro/go-grpc
 RUN go get -u -v github.com/micro/protoc-gen-micro
 RUN go get -u -v github.com/micro/micro
+RUN go get -u -v github.com/micro/kubernetes/go/micro
 
 # install database packages
 RUN go get -u -v github.com/jinzhu/gorm

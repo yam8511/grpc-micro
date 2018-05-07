@@ -2,10 +2,30 @@ version: '3'
 
 services:
     micro:
+        image: micro:latest
         build: ./docker/micro
 
     go-micro:
+        image: go-micro:latest
         build: ./docker/go-micro
 
+    go-micro-alpine:
+        image: go-micro:alpine
+        build:
+            context: ./docker/go-micro
+            dockerfile: alpine.Dockerfile
+
+    go-micro-k8s:
+        image: go-micro:kubenetes
+        build:
+            context: ./docker/go-micro
+            dockerfile: kubenetes.Dockerfile
     govendor:
+        image: govendor:latest
         build: ./docker/govendor
+
+    govendor-alpine:
+        image: govendor:alpine
+        build:
+            context: ./docker/govendor
+            dockerfile: alpine.Dockerfile
