@@ -1,5 +1,7 @@
 ARG GO_VERSION=1.10.2
 FROM golang:${GO_VERSION}-alpine
+
+# install git
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 
@@ -13,6 +15,7 @@ RUN go get -u -v github.com/micro/protoc-gen-micro
 RUN go get -u -v github.com/micro/micro
 
 # install database packages
+RUN go get -u -v github.com/go-sql-driver/mysql
 RUN go get -u -v github.com/jinzhu/gorm
 RUN go get -u -v github.com/garyburd/redigo/redis
 

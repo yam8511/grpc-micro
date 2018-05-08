@@ -14,6 +14,7 @@ RUN go get -u -v github.com/micro/micro
 RUN go get -u -v github.com/micro/kubernetes/go/micro
 
 # install database packages
+RUN go get -u -v github.com/go-sql-driver/mysql
 RUN go get -u -v github.com/jinzhu/gorm
 RUN go get -u -v github.com/garyburd/redigo/redis
 
