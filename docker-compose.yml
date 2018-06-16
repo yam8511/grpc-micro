@@ -29,3 +29,13 @@ services:
         build:
             context: ./docker/govendor
             dockerfile: alpine.Dockerfile
+
+    zrpc:
+        image: zrpc:latest
+        build: ./docker/zrpc
+
+    zrpc-alpine:
+        image: zrpc:alpine
+        build:
+            context: ./docker/zrpc
+            dockerfile: alpine.Dockerfile
