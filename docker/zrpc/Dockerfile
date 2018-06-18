@@ -5,7 +5,7 @@ FROM golang:${GO_VERSION}
 RUN go get -u -v github.com/kardianos/govendor
 
 # install protobuff
-# RUN go get -u -v github.com/golang/protobuf/protoc-gen-go
+RUN go get -u -v github.com/golang/protobuf/protoc-gen-go
 
 # install zrpc packages
 RUN go get -u -v github.com/yam8511/zrpc
