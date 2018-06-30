@@ -21,3 +21,5 @@ RUN go get -u -v github.com/nsqio/go-nsq
 
 # install config packages
 RUN go get -u -v github.com/naoina/toml
+
+RUN go get -u -v google.golang.org/appengine/cloudsql
