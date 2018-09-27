@@ -39,3 +39,9 @@ services:
         build:
             context: ./docker/zrpc
             dockerfile: alpine.Dockerfile
+
+    gonode-alpine:
+        image: gonode:alpine
+        build:
+            context: ./docker/gonode
+            dockerfile: alpine.Dockerfile
